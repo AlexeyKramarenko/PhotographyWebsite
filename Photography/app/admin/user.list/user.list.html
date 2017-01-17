@@ -1,0 +1,29 @@
+﻿
+  
+<table id="userList">
+    <thead>
+        <tr>
+            <td colspan="4">Список користувачiв</td>
+        </tr>
+        <tr>
+            <td>Ім'я</td>
+            <td>Дата</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in vm.users">
+            <td ng-bind="user.Username"></td>
+            <td ng-bind="user.FormatedCreatedDate"></td>
+            <td><a ui-sref="edit_user_gallery_page({galleryId:user.GalleryID})">Галерея</a></td>
+            <td><a ng-click="vm.removeUser(user.GalleryID, user.Username)">Видалити</a></td>
+        </tr> 
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+ 
+
+ 
+ 

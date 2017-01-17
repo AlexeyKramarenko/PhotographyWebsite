@@ -1,0 +1,36 @@
+﻿
+<div id="title">
+    <strong>Редагування сторiнки "Галерея"</strong>
+</div>
+
+<div style="margin:0 auto;width:70%;">
+    <div id="viewer" >
+    </div>
+</div>
+
+<div id="buttons">
+    <div class="button" ng-click="vm.deleteCheckedPics()">
+        Видалити вiдмiченi
+    </div>
+    <!--<a class="button" ui-sref="add_photo_to_gallery_page({galleryId:gallery.GalleryID})">
+        Додати фото
+    </a>-->
+    <a class="button" ng-click="vm.goToAddPhotoToGalleryPage()">
+        Додати фото
+    </a>
+</div>
+
+
+<div id="thumbnailsContainer">
+    <div class="item" ng-repeat="item in vm.gallery.Pictures">
+        <span class="identificator" ng-bind="item.PictureID"></span>
+        <img ng-src="{{item.ThumbnailImagePath}}" ng-click="vm.showLargeImage(item.LargeImagePath)" />
+        <div class="addToCart">
+            <input type="checkbox" ng-model="item.Checked" />
+        </div>
+    </div>
+</div>
+
+
+
+ 

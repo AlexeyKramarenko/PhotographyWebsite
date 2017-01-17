@@ -1,0 +1,28 @@
+﻿
+
+
+<table id="orderList">
+    <thead>
+        <tr>
+            <td colspan="4">Список замовлень</td>
+        </tr>
+        <tr>
+            <td>Замовник</td>
+            <td>Дата замовлення</td>
+            <td>Замовлення</td>
+            <td> </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items">
+            <td>{{item.Username}}</td>
+            <td>{{item.FormatedOrderDate}}</td>
+            <td><a [routerLink]="['../order', item.ID]">Фото</a></td>
+            <td><a (click)="removeOrder(item.ID)">Видалити</a></td>
+        </tr> 
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+
+ 

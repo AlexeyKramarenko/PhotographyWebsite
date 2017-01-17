@@ -1,0 +1,109 @@
+﻿@font-face {
+    font-family: allegretto_script_one;
+    src: url(../../Content/allegretto_script_one.ttf);
+}
+
+#logoPlaceholder {
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    z-index: 1000;
+}
+
+#logo {
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    width: 240px;
+    height: 50px;
+    font-weight: bold;
+}
+
+#author {
+    position: absolute;
+    left: 12px;
+    top: -5px;
+    font-family: allegretto_script_one;
+    font-size: 30px;
+    text-decoration: underline;
+    width:225px;
+}
+
+#name {
+    position: absolute;
+    left: 65px;
+    top: 28px;
+}
+
+#mainPageText {
+    color: white;
+    text-shadow: -1px 0 #fc00ff, 0 1px #fc00ff, 1px 0 #fc00ff, 0 -1px #fc00ff;
+    position: absolute;
+    left: 50px;
+    top: 130px;
+    font-size: 7.0vh;
+    font-family: allegretto_script_one;
+    font-weight: 400;
+}
+
+#homePageBackground {
+    margin-top: -5px;
+    border: 1px solid black;
+}
+
+header nav a:hover {
+    cursor: pointer;
+}
+
+.greyTheme {
+    position: relative;
+    background-color: rgb(189, 185, 185);
+}
+
+.darkTheme {
+    background-color: black;
+}
+
+header {
+    position: relative;
+}
+
+.Invisible {
+    display: none;
+}
+
+#wrapper {
+    padding: 50px;
+}
+
+#message {
+    color: #ece2b0;
+    background-color: black;
+    display: block;
+    padding: 6px 0 6px 12px;
+}
+
+.form_style {
+    background-color: #ece2b0;
+    padding: 20px;
+    width: 450px;
+    border: 3px solid black;
+}
+
+.form {
+    width: 500px;
+    margin: 100px auto auto auto;
+}
+
+.closeBtn {
+        background-color: yellow;
+        padding: 3px;
+        margin-left: 30%;
+        margin-top: -30px;
+        width: 62px;
+        border: 1px solid black;
+    }
+.closeBtn:hover{
+     background-color: #ed8e4a;
+     cursor:pointer;
+}

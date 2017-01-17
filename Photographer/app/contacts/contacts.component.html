@@ -1,0 +1,43 @@
+﻿<div class="form">
+    <div id="formHeader">Написати повiдомленя</div>
+    <div class="row">
+        <div>
+            Ім'я :
+        </div>
+        <div>
+            <input type="text" name="Name" [(ngModel)]="msg.Name" #Name="ngModel" required />
+        </div>
+        <div [style.display]="(Name.valid||Name.untouched)?'none':'inherit'">
+            *Не вказано iм'я
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            Ваш  email :
+        </div>
+        <div>
+            <input type="text" name="Email" [(ngModel)]="msg.Email" #Email="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+        </div>
+        <div [style.display]="(Email.valid||Email.untouched)?'none':'inherit'">
+            *Невiрний email
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            Повiдомлення :
+        </div>
+        <div>
+            <textarea  name="Text" [(ngModel)]="msg.Text" #Text="ngModel"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+        </div>
+        <div>
+            <button [disabled]="Username.invalid || Email.invalid" class="btn btn-inverse" (click)="submitMessage()">Надiслати</button>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+ 

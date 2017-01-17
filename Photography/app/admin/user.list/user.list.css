@@ -1,0 +1,54 @@
+﻿
+@media(max-width:3000px) {
+
+    table {
+        font-size: 1.1em;
+        border-collapse: collapse;
+        margin: 30px auto;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 3px;
+    }
+
+        td:hover {
+            background-color: #fae0bd;
+        }
+
+    thead {
+        text-align: center;
+    }
+
+        thead tr:nth-child(1) td:nth-child(1) {
+            color: orange;
+            background-color: black;
+        }
+
+        thead tr:nth-child(2) {
+            font-weight: bold;
+            background-color: orange;
+        }
+
+    tbody tr td:nth-child(4) {
+        cursor: pointer;
+    }
+
+    tbody {
+        background-color: #efaa2a;
+    }
+
+        tbody tr:hover {
+            background-color: #ffd800;
+        }
+}
+
+@media(max-width:480px) {
+    table {
+        font-size: 0.9em;
+    }
+
+    tr td:nth-child(1) {
+        width: 30px;
+    }
+}

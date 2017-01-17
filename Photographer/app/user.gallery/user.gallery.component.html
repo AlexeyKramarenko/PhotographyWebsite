@@ -1,0 +1,29 @@
+﻿ 
+<div style="margin:0 auto;width:70%;">
+    <div id="viewer">
+    </div>
+</div>
+ 
+<div id="order">
+    <b>Комментар до замовлення:</b><br/>
+    <textarea #comment></textarea><br />
+    <b>Знiмiть позначки з фотографiй, якi Ви не будете замовляти.</b><br/>
+    <div class="button" (click)="orderPhotos()">
+        Замовити
+    </div> 
+</div>
+
+
+<div id="thumbnailsContainer">
+    <div class="item" *ngFor="let item of gallery.Pictures">
+        <span class="identificator">{{item.PictureID}}</span>
+        <img [src]="item.ThumbnailImagePath" (click)="showLargeImage(item.LargeImagePath)" />
+        <div class="addToCart">
+            <input type="checkbox" [(ngModel)]="item.Checked" />
+        </div>
+    </div>
+</div>
+
+
+
+ 

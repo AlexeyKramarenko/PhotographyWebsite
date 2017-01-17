@@ -1,0 +1,34 @@
+﻿
+ 
+<div id="wrapper">
+    <div id='gallery1' style='margin:0px auto;display:none;'>         
+        <a href='#' *ngFor="let item of gallery.Pictures"  >
+            <img alt=""
+                 [src]='item.ThumbnailImagePath' 
+                 [attr.data-image]='item.LargeImagePath' 
+                 style='display:none' />                 
+        </a>       
+    </div>
+</div>
+
+
+<!--<a href='#'>
+    <img alt=""
+         src='/Images/gallery/1_thumb.jpg'
+         data-image='/Images/gallery/1.jpg'
+         style='display:none' />
+</a>
+
+<a href='#'>
+    <img alt=""
+         src='/Images/gallery/1_thumb.jpg'
+         data-image='/Images/gallery/1.jpg'
+         style='display:none' />
+</a>
+
+<a href='#'>
+    <img alt=""
+         src='/Images/gallery/1_thumb.jpg'
+         data-image='/Images/gallery/1.jpg'
+         style='display:none' />
+</a>-->

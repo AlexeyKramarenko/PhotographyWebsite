@@ -1,0 +1,39 @@
+﻿
+<div class="form">
+    <div id="formHeader">Логiн</div>
+    <div class="row">
+        <div>
+            Iм'я:
+        </div>
+        <div>
+            <input type="text" name="Username" [(ngModel)]="login.Username" #Username="ngModel" required>
+        </div>
+        <div [style.display]="(Username.valid||Username.untouched)?'none':'inherit'">
+            *Введiть iм'я
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            Пароль:
+        </div>
+        <div>
+            <input type="password" name="Password" [(ngModel)]="login.Password" #Password="ngModel" required>
+        </div>
+        <div [style.display]="(Password.valid||Password.untouched)?'none':'inherit'">
+            *Введiть пароль
+        </div>
+    </div>
+    <div class="row">
+        <div>
+        </div>
+        <div>
+            <button [disabled]="Password.invalid || Username.invalid" type="submit" (click)="loginUser()">Увiйти</button>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+
+
+
+

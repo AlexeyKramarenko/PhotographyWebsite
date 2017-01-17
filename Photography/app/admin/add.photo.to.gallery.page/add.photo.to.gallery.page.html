@@ -1,0 +1,41 @@
+﻿
+
+<form id="addPhotoForm">
+    <div class="form">
+        <div id="formHeader">{{vm.headerName}}"</div>
+        <div class="row">
+            <div>
+                Зображення:
+            </div>
+            <div>
+                <input type="file" onchange="angular.element(this).scope().uploadLargeImg(this)" />
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                Мiнiатюрна копiя зображення:
+            </div>
+            <div>
+                <input type="file" onchange="angular.element(this).scope().uploadThumbnail(this)" />
+            </div>
+        </div>
+        <div class="row">
+            <div>
+            </div>
+            <div>
+                <button ng-click="vm.saveImages()">Зберегти</button>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div style="margin:0 auto;width:150px;">
+    <img src="{{vm.picture.LargeImagePath}}" alt="Велике фото не вибрано" width="80" /><br />
+    <img src="{{vm.picture.ThumbnailImagePath}}" alt="Зменшене фото не вибрано" width="60" />
+</div>
+
+
+
+

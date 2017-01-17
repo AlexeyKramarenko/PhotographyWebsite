@@ -1,0 +1,69 @@
+﻿
+<div>
+    <form>
+        <input type="hidden" value="" id="GalleryId"/>
+        <table id="login">
+            <tr>
+                <td>Користувач:</td>
+                <td><span id="username">12313123</span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Зображення:</td>
+                <td><input type="file" /></td>
+                <td><span></span></td>
+            </tr>
+            <tr>
+                <td>Зменшена копiя зображення:</td>
+                <td><input type="file" /></td>
+                <td><span></span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Додати зображення</button> </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<style>
+    form {
+        width: 400px;
+        margin: 80px auto;
+    }
+
+    td {
+        padding: 7px;
+    }
+
+        td input {
+            width: 150px;
+        }
+
+    #login {
+        border-collapse: collapse;
+        border-spacing: 0px 0px;
+    }
+
+    td:nth-child(1) {
+        border-left: 2px solid black;
+        background-color: rgb(236, 226, 176);
+    }
+
+    td:nth-child(2) {
+        border-right: 2px solid black;
+        background-color: rgb(236, 226, 176);
+    }
+
+    tr:nth-child(1) td:nth-child(1), tr:nth-child(1) td:nth-child(2) {
+        border-top: 2px solid black;
+        background-color: rgb(236, 226, 176);
+        padding-top: 10px;
+    }
+
+    tr:nth-child(4) td:nth-child(1), tr:nth-child(4) td:nth-child(2) {
+        border-bottom: 2px solid black;
+        background-color: rgb(236, 226, 176);
+    }
+</style>

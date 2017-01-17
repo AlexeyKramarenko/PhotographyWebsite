@@ -1,0 +1,47 @@
+﻿ 
+<form name="contactsForm" class="form">
+    <div id="formHeader">Написати повiдомленя</div>
+    <div class="row">
+        <div>
+            Ім'я :
+        </div>
+        <div>
+            <input type="text" name="username" ng-model="vm.msg.Name" required />
+        </div>
+        <div ng-show="contactsForm.username.$invalid && contactsForm.username.$touched">
+            *Не вказано iм'я
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            Ваш  email :
+        </div>
+        <div>
+            <input type="text" name="email" ng-model="vm.msg.Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+        </div>
+        <div ng-show="contactsForm.email.$invalid && contactsForm.email.$touched">
+            *Невiрний email
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            Повiдомлення :
+        </div>
+        <div>
+            <textarea  name="text" ng-model="vm.msg.Text" required></textarea>
+        </div>
+        <div ng-show="contactsForm.text.$invalid && contactsForm.text.$touched">
+            *Введiть повiдомлення
+        </div>
+    </div>
+    <div class="row">
+        <div>
+        </div>
+        <div>
+            <button ng-disabled="contactsForm.name.$invalid||contactsForm.email.$invalid||contactsForm.text.$invalid" class="btn btn-inverse" ng-click="vm.submitMessage()">Надiслати</button>
+        </div>
+        <div>
+        </div>
+    </div>
+</form> 
+ 

@@ -1,0 +1,21 @@
+﻿
+<div id="title">
+    <strong>Замовлення користувача <i>{{order.Username}}</i></strong>
+</div>
+
+<div style="margin:20px auto;width:90%;">
+    <div id="viewer">
+    </div>
+</div>
+<b>Коментар до замовлення:</b><br/>
+<div id="orderComment">{{order.Comment}}</div>
+<div id="thumbnailsContainer">
+    <div class="item" *ngFor="let pic of order.Pictures">
+        <span class="identificator">{{pic.PictureID}}</span>
+        <img [src]="pic.ThumbnailImagePath" (click)="showLargeImage(pic.LargeImagePath)" />
+    </div> 
+</div>
+
+
+ 
+ 

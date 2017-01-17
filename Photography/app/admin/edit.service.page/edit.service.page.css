@@ -1,0 +1,27 @@
+﻿#msg{
+    width:90%;
+    height:50%;
+    margin:5% 5% auto 5%;
+}
+
+
+button {
+    margin: 20px auto;
+    width: 180px;
+    text-align: center;
+    background-color: darkorange;
+    border: 1px solid black;
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+    button:hover {
+        background-color: #ffd800;
+        cursor: pointer;
+    }
+    #buttons {
+    margin: 0px auto;
+    width: 400px;
+}

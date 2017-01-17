@@ -1,0 +1,18 @@
+﻿
+@media(max-width:3000px) {
+    #article {
+        width: 60%;
+        margin: 70px auto;
+        background-color: aliceblue;
+        padding: 5px 18px 18px 18px;
+        border: 1px solid black;
+        border-radius: 24px;
+    }
+}
+
+@media(max-width:500px) {
+    #article {
+        width: 94%;
+        margin: 5px auto;
+    }
+}

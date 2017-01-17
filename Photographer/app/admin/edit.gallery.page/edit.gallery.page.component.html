@@ -1,0 +1,33 @@
+﻿
+<div id="title">
+    <strong>Редагування сторiнки "Галерея"</strong>
+</div>
+
+<div style="margin:0 auto;width:70%;">
+    <div id="viewer" >
+    </div>
+</div>
+
+<div id="buttons">
+    <div class="button" (click)="deleteCheckedPics()">
+        Видалити вiдмiченi
+    </div>
+    <div class="button" [routerLink]="['../../add_photo_to_gallery_page',gallery.GalleryID]">
+        Додати фото
+    </div>
+</div>
+
+
+<div id="thumbnailsContainer">
+    <div class="item" *ngFor="let item of gallery.Pictures">
+        <span class="identificator">{{item.PictureID}}</span>
+        <img [src]="item.ThumbnailImagePath" (click)="showLargeImage(item.LargeImagePath)" />
+        <div class="addToCart">
+            <input type="checkbox" [(ngModel)]="item.Checked" />
+        </div>
+    </div>
+</div>
+
+
+
+ 

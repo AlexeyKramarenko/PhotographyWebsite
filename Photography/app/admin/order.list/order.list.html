@@ -1,0 +1,27 @@
+﻿
+
+
+<table id="orderList">
+    <thead>
+        <tr>
+            <td colspan="4">Список замовлень</td>
+        </tr>
+        <tr>
+            <td>Замовник</td>
+            <td>Дата замовлення</td>
+            <td>Замовлення</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in vm.items">
+            <td ng-bind="item.Username"></td>
+            <td ng-bind="item.FormatedOrderDate"></td>
+            <td><a ui-sref="order({orderId:item.ID})">Фото</a></td>
+            <td><a ng-click="vm.removeOrder(item.ID)">Видалити</a></td>
+        </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+ 

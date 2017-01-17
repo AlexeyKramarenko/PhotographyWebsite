@@ -1,0 +1,39 @@
+﻿
+<form class="form" name="loginForm">
+    <div id="formHeader">Логiн</div>
+    <div class="row">
+        <div>
+            Iм'я:
+        </div>
+        <div>
+            <input type="text" name="username" ng-model="vm.login.Username" required>
+        </div>
+        <div ng-show="loginForm.username.$invalid && loginForm.username.$touched">
+            *Не вказано iм'я
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            Пароль:
+        </div>
+        <div>
+            <input type="password" name="password" ng-model="vm.login.Password" required>
+        </div>
+        <div ng-show="loginForm.password.$invalid && loginForm.password.$touched">
+            *Введiть пароль
+        </div>
+    </div>
+    <div class="row">
+        <div>
+        </div>
+        <div>
+            <button ng-disabled="loginForm.username.$invalid||loginForm.password.$invalid" class="btn btn-inverse" ng-click="vm.loginUser()">Надiслати</button>
+        </div>
+        <div>
+        </div>
+    </div>
+</form>
+
+
+
+

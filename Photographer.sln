@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photographer(mvc 5, angular 2)", "Photographer\Photographer(mvc 5, angular 2).csproj", "{8E6C5C77-6ADD-4035-97AA-393E8984EEF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore", "ApplicationCore\ApplicationCore.csproj", "{CC5F98E5-A695-4452-B5DD-CF29921EF298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{653D8CEF-8F40-4EA0-8245-1B50E51D038F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photographer(mvc 5, angular 1)", "Photography\Photographer(mvc 5, angular 1).csproj", "{5B20E8D4-EA91-4C05-9BBA-841BCC2EB5EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E6C5C77-6ADD-4035-97AA-393E8984EEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6C5C77-6ADD-4035-97AA-393E8984EEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6C5C77-6ADD-4035-97AA-393E8984EEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6C5C77-6ADD-4035-97AA-393E8984EEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC5F98E5-A695-4452-B5DD-CF29921EF298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5F98E5-A695-4452-B5DD-CF29921EF298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5F98E5-A695-4452-B5DD-CF29921EF298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5F98E5-A695-4452-B5DD-CF29921EF298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{653D8CEF-8F40-4EA0-8245-1B50E51D038F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653D8CEF-8F40-4EA0-8245-1B50E51D038F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653D8CEF-8F40-4EA0-8245-1B50E51D038F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653D8CEF-8F40-4EA0-8245-1B50E51D038F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B20E8D4-EA91-4C05-9BBA-841BCC2EB5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B20E8D4-EA91-4C05-9BBA-841BCC2EB5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B20E8D4-EA91-4C05-9BBA-841BCC2EB5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B20E8D4-EA91-4C05-9BBA-841BCC2EB5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
